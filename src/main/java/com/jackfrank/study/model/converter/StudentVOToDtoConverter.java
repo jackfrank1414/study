@@ -4,6 +4,7 @@ import com.jackfrank.study.model.dto.StudentDTO;
 import com.jackfrank.study.model.vo.StudentVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
 /**
  * @author : jackfrank
@@ -11,6 +12,7 @@ import org.springframework.core.convert.converter.Converter;
  * @description : 一句话描述该类的功能
  * @createTime : 2023/10/15 1:06
  */
+@Component
 public class StudentVOToDtoConverter implements Converter<StudentVO, StudentDTO> {
     /**
      * StudentVO -> StudentDTO
